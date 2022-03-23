@@ -16,16 +16,61 @@ Based on Java 11 with Maven project management, the application built with in-me
 ![alt text](https://i.imgur.com/eoa4Npi.jpg)
 
 ## Endpoints
+```
 Method: `GET`
 URL: `api/v1/station`
 Action: `Return all stations`
+```
 
+```
 Method: `GET`
 URL: `api/v1/station/{stationId}`
 Action: `Return a station`
+```
 
+```
 Method: `GET`
 URL: `api/v1/station/search`
+Action: `Return filtered stations`
 Parameters:
-- `stationName`: Station name to search
-- `stationType`: Station type to search
+  - `stationName`: Station name to search
+  - `stationType`: Station type to search
+```
+
+```
+Method: `POST`
+URL: `api/v1/station`
+Action: `Add a station`
+Headers:
+  - `stationName`: String
+  - `stationCode`: String
+  - `stationLatitude`: Double
+  - `stationLongitude`: Double
+  - `stationType`: String
+```
+
+```
+Method: `PUT`
+URL: `api/v1/station/{stationId}`
+Action: `Update a station`
+Headers:
+  - `stationName`: String
+  - `stationCode`: String
+  - `stationLatitude`: Double
+  - `stationLongitude`: Double
+  - `stationType`: String
+```
+
+```
+Method: `PUT`
+URL: `api/v1/station/status/{stationId}`
+Action: `Update a station`
+Parameters:
+  - `stationStatus`: String
+```
+
+```
+Method: `DELETE`
+URL: `api/v1/station/{stationId}`
+Action: `Delete a station`
+```
