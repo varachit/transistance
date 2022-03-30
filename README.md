@@ -12,9 +12,6 @@ Based on Java 11 with Maven project management, the application built with in-me
 ## Architecture and Design
 ![alt text](https://i.imgur.com/d3zsWwR.jpg)
 
-## Entity Relation
-![alt text](https://i.imgur.com/eoa4Npi.jpg)
-
 ## Endpoints
 ```
 Method: `GET`
