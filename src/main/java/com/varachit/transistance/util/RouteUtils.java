@@ -32,7 +32,7 @@ public class RouteUtils {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Invalid station type");
         }
 
-        if(stations == null || !stations.getClass().getTypeName().equals(LinkedList.class.getTypeName())) {
+        if(stations == null || !stations.getClass().getSimpleName().contains("List")) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Invalid station list type");
         }
     }
